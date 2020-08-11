@@ -27,3 +27,8 @@ div#bottom-container {
   height:200px;
   width:200px;
 }
+
+span {
+  color: blue;
+  text-decoration: underline;
+}
