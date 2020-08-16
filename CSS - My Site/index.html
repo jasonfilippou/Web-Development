@@ -6,25 +6,63 @@
   <title>Jason's personal site</title>
   <link rel="stylesheet" type = "text/css" href="css/styles.css">
   <link rel="icon" href="images/1f5a5.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">  <!-- Some fonts if the user doesn't have them -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&family=Montserrat:wght@600&display=swap" rel="stylesheet">  <!-- Some fonts if the user doesn't have them -->
 </head>
 
 <body>
-  <div id="top-container">
-    <img src="images/cloud.png" alt="cloud-img" id = "cloud_top">
+  <div class="top-container">
+    <img src="images/cloud.png" alt="cloud-img" class = "cloud_top">
     <h1>I'm Jason.</h1>
-    <p>a <span class ="pro">pro</span>grammer.</p>
-    <img src="images/cloud.png" alt="cloud-img" id = "cloud_bottom">
+    <h2>a <span class ="pro">pro</span>grammer.</h2>
+    <img src="images/cloud.png" alt="cloud-img" class = "cloud_bottom">
     <img src="images/mountain.png" alt="mountain-img">
   </div>
 
-  <div id="middle-container">
-    <p>This is a simple paragraph element with an underlined and colored <span>span</span>.</p>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/jason_UCSD_circle.png" alt="Jason at UCSD.">
+      <h2>Hello!</h2>
+      <p>I'm Jason, a Greek-Canadian developer, teacher, researcher and musician based in the United States.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="coding" src="images/programming.gif" alt="">
+        <h3>Programming</h3>
+        <p>I'm skilled in Java, Python, Scala, SQL and MATLAB. My 14 years of coding experience revolves around Systems, Databases, OOP and Machine Learning / Computer Vision algorithms. (<a href="https://github.com/jasonfilippou" alt="Jason's GitHub">GitHub</a>). </p>
+      </div>
+      <div class="skill-row">
+        <img class="teaching" src="images/teaching.png" alt="">
+        <h3>Education</h3>
+        <p>I have 4 years of experience teaching huge classes (430 - 670 students) of CS undergrads. Courses taught: sophomore-level Discrete Mathematics, upperclassman - level Advanced Data Structures. </p>
+      </div>
+
+      <div class="skill-row">
+        <img class="bass" src="images/bass.png" alt="">
+        <h3>Bass Guitar</h3>
+        <p>I have been playing the bass guitar for 4 years, currently taking lessons from <a href="https://www.joshfossgreen.com/" alt = "Josh Fossgreen's website">Josh Fossgreen</a>. I have gathered an Ibanez VTV5, Sire V10 and Journey 4-string bass.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Brendan Iribe Center for Computer Science and Engineering</h3>
+      <p>8125 Paint Branch Dr, Suite 2206, College Park, MD 20742, USA </p>
+      <a href="mailto:jason.filippou@gmail.com" class="btn">CONTACT ME</a>
+    </div>
   </div>
 
-  <div id="bottom-container">
 
+  <div class="bottom-container">
+    <div class = "links">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://www.facebook.com/jason.filippou.5">Facebook</a>
+      <a class="footer-link" href="https://www.jasonfilippou.com/">Website</a>
+    </div>
+    <p class = "acknowledgement">© 2020 Jason Filippou </p>
   </div>
+
 
 
 </body>
