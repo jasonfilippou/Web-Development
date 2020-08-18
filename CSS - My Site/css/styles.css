@@ -164,8 +164,9 @@ hr { /* Rule copied from HTML - Personal Site's CSS directory. */
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin: 20px auto;
+  margin: 30px auto 0px;
   display: inline-block;
+
 }
 
 .btn:hover {
