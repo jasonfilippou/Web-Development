@@ -1,0 +1,19 @@
+ui-patterns.com
+submarinecablemap.com
+codepen.io
+codeply.com (allows preinstallation of bootstrap and other libraries)
+devdocs.io
+https://github.com/nwinkler/atom-keyboard-shortcuts
+https://www.fileformat.info/info/charset/UTF-8/list.htm
+unicode-table.com (also includes emojis)
+https://www.thewikigame.com/
+https://pages.github.com/
+colorhunt.co: Curated color palettes from pro devs.
+https://emojipedia.org/
+https://color.adobe.com/create/color-wheel
+https://www.dailyui.co/
+https://collectui.com/
+https://www.canva.com/ <--- For high fidelity mockups
+dribbble.com (Three 'b's. You can also search by color!)
+sneakpeekit.com <--- Wireframe generation if you don't want pencil / paper)
+balsamiq.cloud <--- Professional wireframing. Collaborative.
