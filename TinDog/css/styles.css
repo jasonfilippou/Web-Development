@@ -12,7 +12,7 @@ body {
 }
 
 #title h1 {
-  font-size: 3.5rem; 
+  font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.5;
 }
@@ -45,4 +45,38 @@ body {
 .title-img {
   transform: rotate(25deg);
   width: 60%;
+}
+
+/* Features div and columns */
+
+#features {
+  background-color: inherit;
+}
+
+#features .row {
+  margin: 60px auto;
+}
+
+#features i {
+  color: #ef8172;
+  margin-bottom: 20px;
+}
+
+#features i:hover {
+  color: #ff4c68
+}
+
+#features .col-lg-4 {
+  text-align:center;
+  line-height: 2.0;
+}
+
+#features h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#features p {
+  color: #8f8f8f;
 }
