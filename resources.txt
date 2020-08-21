@@ -17,3 +17,4 @@ https://www.canva.com/ <--- For high fidelity mockups
 dribbble.com (Three 'b's. You can also search by color!)
 sneakpeekit.com <--- Wireframe generation if you don't want pencil / paper)
 balsamiq.cloud <--- Professional wireframing. Collaborative.
+http://fontawesome.com/ Like the LaTeX library
