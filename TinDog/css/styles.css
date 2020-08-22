@@ -63,7 +63,7 @@ body {
 }
 
 #features i:hover {
-  color: #ff4c68
+  color: #ff4c68;
 }
 
 #features .col-lg-4 {
@@ -79,4 +79,54 @@ body {
 
 #features p {
   color: #8f8f8f;
+}
+
+/* Testimonials  */
+
+#testimonials {
+  background-color: #ef8172;
+  color:white;
+  text-align:center;
+}
+
+#testimonials h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#testimonials img {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+#testimonials .carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align:center;
+  padding-bottom:3%;
+
+}
+
+#press img {
+  width: 15%;
+  margin: 0 20px 50px;
+}
+
+/* Pricing  */
+
+#pricing {
+  background-color: inherit;
+  color:inherit;
+  text-align:center;
+}
+
+#pricing h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
 }

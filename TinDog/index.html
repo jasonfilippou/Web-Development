@@ -67,19 +67,19 @@
   <section id="features" class="container-fluid">
     <div class="row">
 
-      <div class = "col-lg-4">
+      <div class="col-lg-4">
         <i class="fas fa-check-circle fa-4x"> </i>
         <h3>Easy to use.</h3>
         <p>So easy to use, even your dog could do it.</p>
       </div>
 
-      <div class = "col-lg-4">
+      <div class="col-lg-4">
         <i class="fas fa-bullseye fa-4x"></i>
         <h3>Elite Clientele.</h3>
         <p>We have all the dogs, the greatest dogs.</p>
       </div>
 
-      <div class = "col-lg-4">
+      <div class="col-lg-4">
         <i class="fas fa-heart fa-4x"></i>
 
         <h3>Guaranteed to work.</h3>
@@ -94,13 +94,40 @@
 
   <section id="testimonials">
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img src="images/dog-img.jpg" alt="dog image">
+          <em>Pebbles, New York</em>
+        </div>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+        <div class="carousel-item">
+          <h2 class="testimonial-text">We met each other on TinDog and are now celebrating our 3rd anniversary with special treats!</h2>
+          <img class="testimonial-image" src="images/dog-couple-2.jpg" alt="dog couple image">
+          <em>Bingo and Spanx, San Pedro</em>
+        </div>
+
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady image">
+          <em>Beverly, Illinois</em>
+        </div>
+
+      </div> <!-- carousel-inner -->
+
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <!-- specific tag doesn't matter as long as you have role="button" -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- aria-hidden allows a screen reader not to read the buttons as left or right. -->
+        <span class="sr-only">Previous</span> <!-- sr-only = "Screen Reader Only". This will allow screen readers to read "Next" and "Previous" instead of "button left" or "button right" -->
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!-- Carousel -->
+
+
 
   </section>
 
@@ -123,16 +150,60 @@
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+    <!-- Card one -->
+    <div class="card">
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+      <div class="card-header">
+        <h3>Chihuahua</h3>
+      </div>
+
+      <div class="card-body">
+        <h2>Free</h2>
+        <p>5 Matches Per Day</p>
+        <p>10 Messages Per Day</p>
+        <p>Unlimited App Usage</p>
+        <button type="button">Sign Up</button>
+      </div>
+
+    </div>
+
+    <!-- Card two -->
+    <div class="card">
+
+      <div class="card-header">
+        <h3>Labrador</h3>
+      </div>
+
+      <div class="card-body">
+        <h2>Free</h2>
+        <p>5 Matches Per Day</p>
+        <p>10 Messages Per Day</p>
+        <p>Unlimited App Usage</p>
+        <button type="button">Sign Up</button>
+      </div>
+
+    </div>
 
 
-    <h3>Labrador</h3>
+    <!-- Card three -->
+    <div class="card">
+
+      <div class="card-header">
+        <h3>Chihuahua</h3>
+      </div>
+
+      <div class="card-body">
+        <h2>Free</h2>
+        <p>5 Matches Per Day</p>
+        <p>10 Messages Per Day</p>
+        <p>Unlimited App Usage</p>
+        <button type="button">Sign Up</button>
+      </div>
+
+    </div>
+
+
+
     <h2>$49 / mo</h2>
     <p>Unlimited Matches</p>
     <p>Unlimited Messages</p>
