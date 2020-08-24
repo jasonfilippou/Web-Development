@@ -123,6 +123,7 @@ body {
   background-color: inherit;
   color:inherit;
   text-align:center;
+  padding: 5%;
 }
 
 #pricing h2 {
@@ -130,3 +131,11 @@ body {
   font-size: 3rem;
   font-weight: bold;
 }
+
+#pricing .col {
+  padding: 5%;
+}
+
+/* #pricing button { /* Taken care of with btn-block. */
+  width:100%;
+} */
