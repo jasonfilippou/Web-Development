@@ -19,3 +19,7 @@ sneakpeekit.com <--- Wireframe generation if you don't want pencil / paper)
 balsamiq.cloud <--- Professional wireframing. Collaborative.
 http://fontawesome.com/ Like the LaTeX library
 bootsnipp.com <--- Examples of Bootstrap components people have built, and their relevant code snippets.
+themestr.app <--- build your own custom Bootstrap theme
+https://www.google.com/search?q=is+your+website+mobile+friendly&rlz=1C1CHBF_enUS904US904&oq=is+your+webs&aqs=chrome.1.0l2j69i57j0l5.3657j0j7&sourceid=chrome&ie=UTF-8 : Is your website mobile-friendly?
+
+https://www.hobo-web.co.uk/best-screen-size/ Best viewport size assumptions for responsive web design
