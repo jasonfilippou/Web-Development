@@ -1,20 +1,42 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight:900;
+}
+
+/* Containers  */
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 5% 17%;
 }
 
-#title {
+/* Sections  */
+
+.colored-section {
   background-color: #ff4c68;
-  color: white;
+  color:white;
+}
+
+.white-section {
+  background-color: #fff;
+  color:black;
+}
+
+/* Title section  */
+#title {
+  text-align:left;
+}
+
+#title .container-fluid {
+  padding:3% 15% 7%;
 }
 
 #title h1 {
   font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.5;
 }
 
 /* Navigation Bar */
@@ -23,7 +45,7 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   font-weight:bold;
 }
@@ -32,7 +54,7 @@ body {
   font-size: 1.2rem;
   font-weight: lighter;
   padding: 0px 18px;
-  /* font-family: 'Montserrat-Light', sans-serif; */
+  /* font-family: "Montserrat-Light", sans-serif; */
 }
 
 /* Buttons */
@@ -64,7 +86,6 @@ body {
 /* Features div and columns */
 
 #features {
-  background-color: white;
   position: relative;
   /* z-index: 1;  Optional, because positioned elements follow HTML flow if a z-index is not provided. */
 }
@@ -83,14 +104,11 @@ body {
 }
 
 #features .col-lg-4 {
-  text-align:center;
   line-height: 2.0;
 }
 
 #features h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 #features p {
@@ -101,14 +119,10 @@ body {
 
 #testimonials {
   background-color: #ef8172;
-  color:white;
-  text-align:center;
 }
 
 #testimonials h2 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  font-weight: bold;
 }
 
 #testimonials img {
@@ -117,13 +131,8 @@ body {
   width: 10%;
 }
 
-#testimonials .carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
   background-color: #ef8172;
-  text-align:center;
   padding-bottom:3%;
 
 }
@@ -136,43 +145,32 @@ body {
 /* Pricing  */
 
 #pricing {
-  background-color: inherit;
-  color:inherit;
-  text-align:center;
   padding: 5%;
 }
 
 #pricing h2 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  font-weight: bold;
 }
 
 #pricing .col {
   padding: 5%;
 }
 
+#pricing .card-body h2 {
+  font-weight: bold;
+}
+
 /* Call to Action */
 
-#cta {
-  background-color: #ff4c68;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
+#cta h3 {
+  font-size: 3.5rem;
 }
 
-#cta h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: bold;
-  line-height: 1.5;
-}
+/* Footer */
 
 #footer {
-  background-color: white;
   color: gray;
-  margin: 100px auto;
-  text-align: center;
+  margin: 50px auto 10px;
 }
 
 #footer #social {
