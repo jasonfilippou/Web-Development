@@ -1,1 +1,2 @@
-// document.querySelector("ul").childNodes[3].innerHTML="Jason";
+// document.querySelector("h1").innerHTML="Good Bye"
+//alert("Hello");
