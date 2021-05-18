@@ -1,0 +1,26 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "An e-mail newsletter sign up page deployed via Heroku.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "REST",
+    "API",
+    "Heroku",
+    "JavaScript",
+    "body-parser",
+    "app"
+  ],
+  "author": "Jason Filippou",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

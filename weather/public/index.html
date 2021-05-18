@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App!</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form class="fill-auto" action="/" method="post">
+      <label for="apiKey">API Key:</label>
+      <input id="apiKey" type="text" name="apiKey" value=""> <br>
+      <label for="city">City:</label>
+      <input id="city" type="text" name="city" value=""> <br>
+      <label for="units">Units:</label>
+      <input id="units" type="text" name="units" value=""> <br>
+      <button type="submit" id="submit-button" name="submit-button" value = "submit">Get Weather</button> <br>
+      <button type="reset" value = "reset">Clear form</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

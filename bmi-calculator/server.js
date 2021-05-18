@@ -28,6 +28,6 @@ app.post("/", (req, res) => {
   if(req.body.measurements === "imperial") {
     MULTIPLIER = 703;
   }
-  let bmi = weight / (height * height) * MULTIPLIER;
+  const bmi = weight / (height * height) * MULTIPLIER;
   res.send("<h3>Your BMI is: " + bmi + "</h3>");
 });
