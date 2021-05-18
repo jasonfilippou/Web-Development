@@ -28,5 +28,3 @@ app.post("/", (req, res) => {
   [firstName, lastName, email] = [req.body.firstName, req.body.lastName, req.body.email];
   res.send("<h1>All good, thanks!</h1>");
 })
-
-// 0372867ce4afe30e02b652548e7d2695-us1
