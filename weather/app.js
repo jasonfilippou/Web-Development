@@ -33,9 +33,9 @@ app.post("/", (requestFromClient, responseToClient) => {
   https.get(URL, (responseFromAPI) => {
     console.log(`Contacting OpenWeatherMap API yielded response code: ${responseFromAPI.statusCode}.`);
     // Parse the data from the server.
-    responseFromAPI.on("data", (data) => {
+    responseFromAPI.on("data", (data) => {    // Specifying event handler for the event "data", which as an input takes.... the data.
       const weatherData = JSON.parse(data);
-      // Destructuring assingment only possible with `let`. Doesn't seem as clean as with Python.
+      // Destructuring assingment. Doesn't seem as clean as with Python.
       let description, temperature, icon;
       [description, temperature, icon] = [weatherData.weather[0].description, weatherData.main.temp, weatherData.weather[0].icon];
       const ICON_URL = `http://openweathermap.org/img/wn/${icon}@2x.png`;

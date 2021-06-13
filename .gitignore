@@ -1,5 +1,4 @@
 .DS_Store/
 *~
 *.bak
-Goal*docx
-Goal*pdf
+.idea/
