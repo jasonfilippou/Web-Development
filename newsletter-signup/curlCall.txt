@@ -1,3 +1,0 @@
-curl -X GET \
-  'https://us1.api.mailchimp.com/3.0/lists/501b047bbe?include_total_contacts=true' \
-  --user "jason:9c07ad9580e1ef9200c678fe8d5b376c-us1"
