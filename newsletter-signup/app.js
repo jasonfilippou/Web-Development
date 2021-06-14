@@ -9,8 +9,8 @@ const VIP = false;
 const UPDATE_EXISTING = false;
 const MAILCHIMP_LIST_ID = process.env.AUDIENCE_ID;
 const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
-const SERVER = "us1";
-
+const SERVER = process.env.SERVER_ID;
+const PORT = process.env.PORT || 3000
 const app = express();
 
 /*** Serve all static resources inside `public` directory. ***/
@@ -19,8 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 /*** The following statement allows our `body-parser` instance to access form-data. ***/
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000.");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}.`);
 });
 
 /*** GET route endpoint ***/
@@ -36,7 +36,6 @@ app.post("/", (req, res) => {
   // Define data member based on parameters of req
   // and global constants.
   const member = {
-      memester: true,
       email_address: req.body.email,
       email_type: EMAIL_TYPE,
       status: SUBSCRIPTION_STATUS,
@@ -60,7 +59,7 @@ app.post("/", (req, res) => {
       update_existing: UPDATE_EXISTING
     });
     console.log(JSON.stringify(response));  // Want to read some output in terminal
-    if(response.errors.length) {
+    if(response.errors.length > 0) {
         throw new Error(response.errors);
     }
   };
