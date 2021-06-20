@@ -7,7 +7,7 @@ const path = require('path');
 app.use(bodyParser.urlencoded({extended:true}));
 
 // The following statement tells Express to serve all static resources from `public` folder
-// to the client. This is important because when we serve the index.html file to the user,
+// to the client. This is important because when we serve the list.ejs file to the user,
 // their browser also needs to access linked stylesheets and `.js` files.
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -17,7 +17,7 @@ app.listen(3000, () => {
 
 app.get("/", (req, res) => {
   console.log("Serving a GET request at root route.");
-  res.sendFile(path.join(__dirname, "public/index.html"));
+  res.sendFile(path.join(__dirname, "public/list.ejs"));
 });
 
 app.post("/", (req, res) => {

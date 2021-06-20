@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 // Root GET endpoint. Serve them with an HTML view.
 app.get("/", (req, res) => {
   console.log("Serving a GET request at root route.");
-  res.sendFile(path.join(__dirname, "public/index.html"));
+  res.sendFile(path.join(__dirname, "public/list.ejs"));
 });
 
 // Root POST endpoint. We will serve weather data using it.
