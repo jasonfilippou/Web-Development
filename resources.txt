@@ -1,3 +1,5 @@
+https://www.appbrewery.co/p/web-development-course-resources Resources of the class proper
+
 ui-patterns.com
 submarinecablemap.com
 codepen.io
@@ -5,7 +7,8 @@ codeply.com (allows preinstallation of bootstrap and other libraries)
 devdocs.io
 https://github.com/nwinkler/atom-keyboard-shortcuts
 https://www.fileformat.info/info/charset/UTF-8/list.htm
-unicode-table.com (also includes emojis)
+unicode-t                                                               
+able.com (also includes emojis)
 https://www.thewikigame.com/
 https://pages.github.com/
 colorhunt.co: Curated color palettes from pro devs.
