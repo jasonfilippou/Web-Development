@@ -1,10 +1,10 @@
 function randomDieFace(){
     return "./images/dice" + randomDieFaceValue() + ".png";
-};
+}
 
 function randomDieFaceValue(){
     return randomInt(1, 7); // Bottom inclusive, top exclusive.
-};
+}
 
 function randomInt(low, high){
   if (!isInt(low) || !isInt(high)){
@@ -17,7 +17,7 @@ function randomInt(low, high){
   function isInt(num) {
      return $.isNumeric(num) && (Math.floor(num) === num);
   }
-};
+}
 
 const dieFaceOne = randomDieFace();
 const dieFaceTwo = randomDieFace();

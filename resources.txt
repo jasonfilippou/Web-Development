@@ -28,3 +28,4 @@ https://www.google.com/search?q=is+your+website+mobile+friendly&rlz=1C1CHBF_enUS
 https://www.hobo-web.co.uk/best-screen-size/ Best viewport size assumptions for responsive web design
 
 https://github.com/rwaldron/idiomatic.js/ <---- Principles of consistent, idiomatic JavaScript
+
