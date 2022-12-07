@@ -1,9 +1,10 @@
-$(document).ready(function() {
-    // $("button").on("click", function() {
-    //   $("h1").slideToggle();
-    // });
-
-    $("#button").on("click", function() {
-      $("h1").animate({margin: "20%"});      // Takes as argument a CSS style with only NUMERIC values.
-    });
+$(document).ready(() => {
+  let headerSelector = $("h1");
+  $("button").click(() => headerSelector.toggleClass("big-title"));
+  $("body").on("keypress", (event) => {
+    headerSelector.text(event.key);
+    console.log(event.key);
+  });
+  headerSelector.before("<button>New Button!</button>");
+  headerSelector.on("mouseover", () => headerSelector.toggleClass("big-title"));
 });

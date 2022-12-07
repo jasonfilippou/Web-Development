@@ -1,13 +1,9 @@
 .big-title {
   font-size: 10rem;
-  color:yellow;
+  color: yellow;
   font-family: cursive;
 }
 
-.margin-50{
-  margin:50px;
-}
-
-.red-button {
-  background-color:red;
+.margin-50 {
+  margin: 50px;
 }
