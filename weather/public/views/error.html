@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather query</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="error">
+      Please use imperial, metric or standard as your units.
+    </h1>
+    <form action="/weather/public" method="post">
+      <input name="city" placeholder="Your city here" type="text" />
+      <input
+        name="units"
+        placeholder="Units of Measurement (imperial, metric, standard)"
+        type="text"
+      />
+      <button name="submit" type="submit">Calculate!</button>
+    </form>
+  </body>
+  <script
+    crossorigin="anonymous"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+  ></script>
+  <script charset="utf-8" src="../../app.js"></script>
+</html>
