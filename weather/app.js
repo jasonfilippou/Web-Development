@@ -21,15 +21,21 @@ app.post("/weather/public", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/views/error.html"));
     return;
   }
-
   let weather = new OpenWeatherAPI({
     key: "446796dd3dcb7353a6708022dc53b51a",
     locationName: city,
     units: units,
   });
   weather.getCurrent().then((data) => {
-    res.send(
-      `<p>Current temperature in ${city} is: ${data.weather.temp.cur}</p>`
+    console.log(data);
+    let description =
+      data.weather.description.charAt(0).toUpperCase() +
+      data.weather.description.slice(1);
+    res.write(
+      `<h1>${description} right now in ${city}! <img src = ${data.weather.icon.url} alt = ${data.weather.icon.raw}></h1>`
     );
+    res.write(`<p>Current temperature is: ${data.weather.temp.cur}, 
+            and it feels like ${data.weather.feelsLike.cur}!</p>`);
+    res.send();
   });
 });

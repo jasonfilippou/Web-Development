@@ -7,7 +7,13 @@
   <body>
     <h1>Input a city and your units!</h1>
     <form action="/weather/public" method="post">
-      <input name="city" placeholder="Your city here" type="text" />
+      <!--      <label for="cityInput">City name:</label>-->
+      <input
+        id="cityInput"
+        name="city"
+        placeholder="Your city here"
+        type="text"
+      />
       <input
         name="units"
         placeholder="Units of Measurement (imperial, metric, standard)"
