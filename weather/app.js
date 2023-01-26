@@ -22,7 +22,7 @@ app.post("/weather/public", (req, res) => {
     return;
   }
   let weather = new OpenWeatherAPI({
-    key: "446796dd3dcb7353a6708022dc53b51a",
+    key: process.env.OPENWEATHERMAP_API_KEY,
     locationName: city,
     units: units,
   });
