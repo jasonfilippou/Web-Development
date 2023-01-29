@@ -26,7 +26,7 @@ app.listen(PORT, () => {
 /*** GET route endpoint ***/
 app.get("/", (req, res) => {
   console.log("Serving a GET request at root route.");
-  res.sendFile(path.join(__dirname, "public/signup.html"));
+  res.sendFile(path.join(__dirname, "public/views/signup.html"));
 });
 
 /*** Root route POST endpoint ***/
@@ -70,8 +70,10 @@ app.post("/", (req, res) => {
   // Call the async function you defined
   //app.use(express.static(path.join(__dirname, 'public')));
   postIt()
-    .then(() => res.sendFile(path.join(__dirname, "public/success.html")))
-    .catch(() => res.sendFile(path.join(__dirname, "public/failure.html")));
+    .then(() => res.sendFile(path.join(__dirname, "public/views/success.html")))
+    .catch(() =>
+      res.sendFile(path.join(__dirname, "public/views/failure.html"))
+    );
 });
 
 /*** failure rout POST endpoint ***/
