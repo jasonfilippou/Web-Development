@@ -5,11 +5,17 @@
         <title>To Do List</title>
     </head>
     <body>
-    <% if(day === 0 || day === 6) {%>
-        <h1 style="color:purple">It's the <%= days[day] %> ToDo List!</h1>
-    <% } else { %>
-        <h1 style="color:blue">It's the <%= days[day] %> ToDo List!</h1>
-    <% } %>
-    <p>Why are you <%= day === 0 || day === 6 ? "" : "not" %> working?</p>
+    <h1><%= day %></h1>
+
+    <ul>
+        <% for(let item in newItems){ %>
+            <li><%= newItems[item] %></li>
+        <% } %>
+    </ul>
+    <form class = "" method = "post" action="/" target="_self">
+        <input type = "text" name = "newItem" placeholder="New Item">
+        <button type="submit" name="button">Add</button>
+    </form>
+    </form>
     </body>
 </html>

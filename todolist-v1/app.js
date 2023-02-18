@@ -9,23 +9,31 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
 
+let newItems = ["Buy Food", "Kiss Girlfriend", "Kiss Girlfriend again"];
 app.get("/", (req, res) => {
   console.log(
-    `Responding to request at root route. Request parameters: ${JSON.stringify(
+    `Responding to GET request at root route. Request parameters: ${JSON.stringify(
       req.params
     )}`
   );
-  let day = new Date().getDay();
+  let today = new Date();
+  const options = {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  };
   res.render("list", {
-    day: day,
-    days: {
-      0: "Sunday",
-      1: "Monday",
-      2: "Tuesday",
-      3: "Wednesday",
-      4: "Thursday",
-      5: "Friday",
-      6: "Saturday",
-    },
+    day: today.toLocaleDateString("en-us", options),
+    newItems: newItems,
   });
+});
+
+app.post("/", (req, res) => {
+  console.log(
+    `Responding to POST request at root route. Request parameters: ${JSON.stringify(
+      req.params
+    )}`
+  );
+  newItems.push(req.body.newItem);
+  res.redirect("/");
 });
