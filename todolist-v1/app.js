@@ -1,36 +1,49 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const PORT = 3000;
 const app = express();
+const PORT = process.env.port || 3000;
 
-// Serve all static resources inside `public` directory.
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname, "public")));
+app.set("view engine", "ejs");
+app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
 
-// The following statement allows our `body-parser` instance to access form-data.
-app.use(bodyParser.urlencoded({extended:true}));
-
-// Set our view engine. This requires that I have a `views` top-level directory in my project.
-app.set('view engine', 'ejs');
-
-const items = ["Buy food", "Cook food", "Eat food"];
-
-app.listen(PORT, () => console.log(`Running on port ${PORT}!`));
-
+let newItems = ["Buy Food", "Kiss Girlfriend", "Kiss Girlfriend again"];
+let workItems = [];
 app.get("/", (req, res) => {
-    const dateTimeFormatOptions = {
+    console.log(
+        `Responding to GET request at root route. Request parameters: ${JSON.stringify(
+            req.params
+        )}`
+    );
+    let today = new Date();
+    const options = {
         weekday: "long",
+        month: "long",
         day: "numeric",
-        month: "long"
     };
-    const today = new Date().toLocaleDateString(dateTimeFormatOptions);
-    res.render("list", {day: today, items: items}); // This requires that I have set my view engine appropriately and I have "list" under my views/ subfolder.
+    res.render("list", {
+        listTitle: today.toLocaleDateString("en-us", options),
+        newItems: newItems,
+    });
 });
 
+app.get("/work", (req, res) => {
+    console.log(`Responding to GET Request at work route. Request parameters: ${JSON.stringify(req.params)}`);
+    res.render("list", {
+        listTitle: "Work",
+        newItems: workItems
+    })
+});
+
+
 app.post("/", (req, res) => {
-    let newItem = req.body.newItem;  // body-parser allows us to fetch this data.
-    if(req.body.newItem) {
-        items.push(newItem);
-    }
-    res.redirect("/");  // Restarting the entire process by triggering a GET at "/".
+    console.log(
+        `Responding to POST request at root route. Request parameters: ${JSON.stringify(
+            req.params
+        )}`
+    );
+    newItems.push(req.body.newItem);
+    res.redirect("/");
 });
