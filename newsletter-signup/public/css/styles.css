@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -26,15 +27,14 @@ body {
 }
 
 .top {
-  margin-bottom: -1px;
+  margin-bottom: 2px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-
 .middle {
   border-radius: 0;
-  margin-bottom: -1px
+  margin-bottom: 2px;
 }
 
 .bottom {
