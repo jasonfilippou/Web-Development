@@ -1,0 +1,21 @@
+{
+  "name": "qr-code",
+  "version": "1.0.0",
+  "description": "A QR Code generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qr",
+    "inquirer",
+    "qr-image"
+  ],
+  "author": "Jason Filippou",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.10",
+    "qr-image": "^3.2.0"
+  }
+}
